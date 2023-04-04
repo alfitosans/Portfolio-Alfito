@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/56dac45e73.js" crossorigin="anonymous"></script>
+     <title>Portfolio Alfito</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logoipsum-226.svg" path="" class="logo" alt="" />
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+       
+<!-- ----------About---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/bersamanapisa.JPG"> 
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><span>About Me</span></h1>Assalamualaikum, Saya seorang web developer berusia 21 tahun. Saat ini saya sedang menempuh pendidikan di Universitas Gunadarma di Jakarta, Indonesia. Saya sangat tertarik dalam bidang pengembangan web dan selalu mencari kesempatan untuk mempelajari teknologi baru.Saya saat ini juga sedang menjalani program internship di Skilvul, sebuah perusahaan edukasi teknologi yang fokus pada pengembangan web dan mobile.  Saya juga menguasai beberapa framework dan library seperti React, Vue, dan jQuery. 
+            <div class="tab-titles ">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- tab contents -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul> <li><span>UI/UX</span></br>Design Web/App Interface</li>
+              <ul> <li><span>Web Development</span></br>Design Web/App Development</li>
+              <ul> <li><span>App Development</span></br>Building Android/iOS Apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul> <li><span>2020 - Current</span></br>Student at Gunadarma University</li>
+              <ul> <li><span>2021 - 2023</span></br>Educator at Rumah kahyangan Depok</li>
+              <ul> <li><span>2023 - 2024</span></br>Internship at Skilvul</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education"> 
+              <ul> <li><span>2023</span></br>UI Design Web/App Interface</li>
+              <ul> <li><span>2024</span></br>Junior Designer at GoTo Corporation</li>
+              <ul> <li><span>2025</span></br>Full-Stack Web Dev at Bank Indonesia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+  
+    <!-- Contact -->
+
+ 
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){  
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+      }
+      
+    </script>
+  </body>
+</html>
