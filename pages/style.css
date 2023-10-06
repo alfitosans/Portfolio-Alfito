@@ -378,6 +378,61 @@ form .btn2 {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Gaya untuk logo footer */
+.footer-logo img {
+  max-width: 100px;
+}
+
+/* Gaya untuk tautan footer */
+.footer-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Gaya untuk ikon media sosial */
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 /* =================================================== */
 
 @media only screen and (max-width: 1080px) {
